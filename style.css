@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 0 0 100px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.navbar.hide {
+    transform: translateY(-100%);
+}
+
+.navbar .channel {
+    position: relative;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    display: flex;
+    float: right;
+    background: rgba(0, 0, 0, .5);
+}
+
+.navbar ul li {
+    list-style: none;
+    line-height: 80px;
+    text-align: center;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: #fd2928;
+    color: #fff;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+section.sec1 {
+    background: url(bg4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.sec2 {
+    padding: 100px;
+    height: auto;
+
+}
+
+section.sec2 h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    color: #262626;
+}
+
+section.sec2 p {
+    font-size: 18px;
+
+}
+
+section.sec3 {
+    background: url(bg5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.sec4 {
+    background: url(bg6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.progress-container {
+    position: fixed;
+    width: 100vw;
+    height: 4px;
+    background: #ccc;
+    padding: 0 0 0 0px;
+    /* display: none; */
+    z-index: 100;
+}
+
+.progress-container .black {
+    width: 100%;
+    height: 4px;
+    background: #ccc;
+    display: block;
+    z-index: 100;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 4px;
+    background: #f34380;
+    width: 0%;
+    z-index: 100;
+}
+
+.progress-bar .black {
+    height: 4px;
+    background: #f34380;
+    width: 0%;
+    z-index: 100;
+}
